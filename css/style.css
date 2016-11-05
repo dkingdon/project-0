@@ -1,5 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-.block {
+.container {
+  display: block;
+  top: 20px;
+  width: 100%;
+  left: 10;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*.row-one {
+  position: absolute;
+}*/
+
+.blockOne {
+  position: absolute;
+  background-color: #abc;
+  left: 50px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+
+}
+
+
+.race-track {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*position: relative;*/
+}
+
+
+.blockTwo {
   position: absolute;
   background-color: #abc;
   left: 50px;

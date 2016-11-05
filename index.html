@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CDN if i use it-->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   <!-- custom styles (always require after Bootstrap) -->
   <link rel="stylesheet" href="css/style.css">
@@ -25,25 +25,81 @@
 
 <body>
     <!-- Place Holder template -->
-  <button id="left">&laquo;</button>
-  <button id="right">&raquo;</button>
-  <div class="block"></div>
+    <!-- <div class="container">
+        <div class="row-one">
+            <button id="leftOne">&laquo;</button>
+            <button id="rightOne">&raquo;</button>
+            <div class="blockOne"></div>
 
-  <script>
-$( "#right" ).click(function() {
-  $( ".block" ).animate({ "left": "+=15px" }, 80 );
-});
+          <script>
+              $( "#rightOne" ).click(function() {
+                $( ".blockOne" ).animate({ "left": "+=15px" }, 80 );
+              });
 
-$( "#left" ).click(function(){
-  $( ".block" ).animate({ "left": "-=15px" }, 80 );
-});
-</script>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div id="greeting">Hello There</div>
+              $( "#leftOne" ).click(function(){
+                $( ".blockOne" ).animate({ "left": "-=15px" }, 80 );
+              });
+          </script>
+        </div>
+
+        <div class="row-two">
+            <button id="leftTwo">&laquo;</button>
+            <button id="rightTwo">&raquo;</button>
+            <div class="blockTwo"></div>
+
+          <script>
+            $( "#rightTwo" ).click(function() {
+            $( ".blockTwo" ).animate({ "left": "+=15px" }, 80 );
+            });
+
+            $( "#leftTwo" ).click(function(){
+            $( ".blockTwo" ).animate({ "left": "-=15px" }, 80 );
+            });
+          </script>
+        </div>
+   </div> -->
+  <div class="game-board">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="race-track">
+            <button id="leftOne">&laquo;</button>
+            <button id="rightOne">&raquo;</button>
+                <div class="blockOne"></div>
+
+            <script>
+                $( "#rightOne" ).click(function() {
+                  $( ".blockOne" ).animate({ "left": "+=15px" }, 80 );
+                });
+
+                $( "#leftOne" ).click(function(){
+                  $( ".blockOne" ).animate({ "left": "-=15px" }, 80 );
+                });
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row-two">
+            <div class="race-track">
+              <button id="leftTwo">&laquo;</button>
+              <button id="rightTwo">&raquo;</button>
+              <div class="blockTwo"></div>
+              <script>
+                $( "#rightTwo" ).click(function() {
+                $( ".blockTwo" ).animate({ "left": "+=15px" }, 80 );
+                });
+
+                $( "#leftTwo" ).click(function(){
+                $( ".blockTwo" ).animate({ "left": "-=15px" }, 80 );
+                });
+              </script>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </body>
 </html>
