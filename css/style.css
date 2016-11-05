@@ -12,35 +12,37 @@ html, body {
   margin: 0 auto;
 }
 
-/*.row-one {
-  position: absolute;
-}*/
-
 .blockOne {
-  position: absolute;
+  position: relative;
   background-color: #abc;
+  opacity: .8;
   left: 50px;
   width: 90px;
   height: 90px;
   margin: 5px;
-
 }
-
 
 .race-track {
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
-  /*position: relative;*/
+  background: url(http://www.animatedimages.org/data/media/280/animated-star-image-0080.gif);
 }
 
-
 .blockTwo {
-  position: absolute;
+  position: relative;
   background-color: #abc;
   left: 50px;
   width: 90px;
   height: 90px;
   margin: 5px;
+}
+img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }

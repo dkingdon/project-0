@@ -4,9 +4,9 @@ $(document).ready(function() {
 
     /* ---- Top Player animate code ----*/
 var keyCountTop = 0;
-    $( "body" ).on('keydown', function(e) {
+    $( 'body' ).on('keydown', function(e) {
       if (e.which === 83){
-        $( ".blockOne" ).animate({ "left": "+=15px" }, 80 );
+        $( '.blockOne' ).animate({ 'left': '+=15px' }, 80 );
           /* counts key is presses. As of now, im planning to use this number to determine winner*/
           keyCountTop += 1;
           console.log(keyCountTop); //Logging in console for testing. Will remove once finished.
@@ -19,9 +19,9 @@ var keyCountTop = 0;
 
     /* ---- Bottom Player animate code ----*/
 var keyCountBottom = 0;
-    $( "body" ).on('keydown', function(e) {
+    $( 'body' ).on('keydown', function(e) {
       if (e.which === 75){
-        $( ".blockTwo" ).animate({ "left": "+=15px" }, 80 );
+        $( '.blockTwo' ).animate({ 'left': '+=15px' }, 80 );
           keyCountBottom += 1;
           console.log(keyCountBottom); //Logging in console for testing. Will remove once finished.
       }
@@ -36,7 +36,7 @@ var keyCountBottom = 0;
 
 
 // sudo:
-// Keys s is 83 | k is 75
+
 // will want to set winning number of clicks based on browser window width
 //       http://stackoverflow.com/questions/1038727/how-to-get-browser-width-using-javascript-code
 //
