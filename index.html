@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CDN if i use it-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 
   <!-- custom styles (always require after Bootstrap) -->
   <link rel="stylesheet" href="css/style.css">
@@ -20,17 +20,30 @@
   <!-- load in app.js -->
   <script type="text/javascript" src="scripts/app.js"></script>
 
-
-  <!-- Place Holder template -->
-  <title>Ex 1</title>
+  <title>Project ZERO!</title>
 </head>
+
 <body>
-  <div class="container">
+    <!-- Place Holder template -->
+  <button id="left">&laquo;</button>
+  <button id="right">&raquo;</button>
+  <div class="block"></div>
+
+  <script>
+$( "#right" ).click(function() {
+  $( ".block" ).animate({ "left": "+=15px" }, 80 );
+});
+
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "left": "-=15px" }, 80 );
+});
+</script>
+  <!-- <div class="container">
     <div class="row">
       <div class="col-sm-6">
         <div id="greeting">Hello There</div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
