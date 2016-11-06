@@ -190,7 +190,7 @@ html, body {
 .p2-progress-overlay h2 {
   font-size: 55px;
 }
-
+ /*Play button*/
 button {
   margin-left: 205px;
   margin-top: -38px;
@@ -214,6 +214,18 @@ button {
   font-family: Allerta, sans-serif;
   border: 2px solid #9139A4;
   background: rgba(48,175,209,0.7);
+}
+
+#countdown {
+  color: white;
+  text-align: center;
+  font-family: Allerta, sans-serif;
+  margin-left: 10px;
+  margin-top: -600px;
+}
+
+#countdown h1 {
+  font-size: 250px;
 }
 
 footer {
