@@ -7,6 +7,9 @@ html, body {
  /* Welcome dialog that fires upon window load*/
 #dialog {
   color: white;
+  /* this is fixing the background resizing bug, but eliminates the animation. Not sure which is worse.
+  position: absolute;
+  top: -215px;*/
   border: 3px solid #9139A4;
   background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
   font-family: Allerta, sans-serif;
@@ -188,6 +191,29 @@ html, body {
   font-size: 55px;
 }
 
+button {
+  margin-left: 205px;
+  margin-top: -38px;
+}
+
+.btn {
+  color: white;
+  font-family: Allerta, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  border: 2px solid #9139A4;
+  background: rgba(0,0,0,0.7);
+}
+
+.btn:hover {
+  color: white;
+  font-family: Allerta, sans-serif;
+  border: 2px solid #9139A4;
+  background: rgba(48,175,209,0.7);
+}
 
 footer {
   margin-top: 80px;
