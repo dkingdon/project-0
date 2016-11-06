@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   background: url(http://amxxcs.ru/wp/OH1Cf1c.jpg) center center no-repeat;
   background-size: cover;
-
 }
 
 .head-text {
@@ -46,7 +45,7 @@ html, body {
 }
 
 .race-track {
-  border: 1px solid black;
+  border-right: 3px dashed white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
