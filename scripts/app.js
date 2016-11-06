@@ -38,20 +38,20 @@ var keyCountBottom = 0;
     });
 
     /* jQuery UI intro modal */
-    // $( function() {
-    //   $( "#dialog" ).dialog({
-    //     autoOpen: true,
-    //     minWidth: 800,
-    //     show: {
-    //       effect: "blind",
-    //       duration: 1200
-    //     },
-    //     hide: {
-    //       effect: "explode",
-    //       duration: 700
-    //     }
-    //   });
-    // } );
+    $( function() {
+      $( "#dialog" ).dialog({
+        autoOpen: true,
+        minWidth: 800,
+        show: {
+          effect: "blind",
+          duration: 1200
+        },
+        hide: {
+          effect: "explode",
+          duration: 700
+        }
+      });
+    } );
 
     /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix */
 function showText(id){
