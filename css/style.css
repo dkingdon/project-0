@@ -200,11 +200,12 @@ button {
   color: white;
   font-family: Allerta, sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bolder;
   width: 124px;
   height: 124px;
   border-radius: 50%;
-  border: 2px solid #9139A4;
+  border: 2px dashed #9139A4;
   background: rgba(0,0,0,0.7);
 }
 
