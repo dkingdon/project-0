@@ -9,6 +9,10 @@ var keyCountTop = 0;
         $( '.blockOne' ).animate({ 'left': '+=15px' }, 80 );
           /* counts key is presses. As of now, im planning to use this number to determine winner*/
           keyCountTop += 1;
+          /* Calculates percentage complete and changes text on page to reflect */
+          if (keyCountTop > 0){
+          $('#p1-progress').text(Math.round((keyCountTop / 104) * 100) + '%');
+          }
             /* Alert winner */
             if (keyCountTop === 104 && keyCountBottom < 104){
               showText('p1-win-dialog');
@@ -26,6 +30,10 @@ var keyCountBottom = 0;
       if (e.which === 75 && keyCountBottom <= 104){
         $( '.blockTwo' ).animate({ 'left': '+=15px' }, 80 );
           keyCountBottom += 1;
+          /* Calculates percentage complete and changes text on page to reflect */
+          if (keyCountBottom > 0){
+          $('#p2-progress').text(Math.round((keyCountBottom / 104) * 100) + '%');
+          }
           console.log(keyCountBottom); //Logging in console for testing. Will remove once finished.
             /* Alert winner */
             if (keyCountBottom === 104 && keyCountTop < 104){
