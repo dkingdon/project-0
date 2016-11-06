@@ -14,6 +14,29 @@ html, body {
   font-size: 18px;
   font-stretch: expanded;
 }
+#p1-win-dialog {
+  color: white;
+  border: 3px solid #9139A4;
+  background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
+  font-family: Allerta, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-stretch: expanded;
+  text-align: center;
+  /*padding-top: 20px;*/
+}
+
+#p2-win-dialog {
+  color: white;
+  border: 3px solid #9139A4;
+  background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
+  font-family: Allerta, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-stretch: expanded;
+  text-align: center;
+  /*padding-top: 20px;*/
+}
 
 .head-text {
   margin-top: 0;

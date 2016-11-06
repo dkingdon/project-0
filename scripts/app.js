@@ -11,7 +11,10 @@ var keyCountTop = 0;
           keyCountTop += 1;
             /* Alert winner */
             if (keyCountTop === 104 && keyCountBottom < 104){
-              alert('Player One Wins!')
+              showText('p1-win-dialog');
+              $( function() {
+                $( "#p1-win-dialog" ).dialog();
+              } );
             }
           console.log(keyCountTop); //Logging in console for testing. Will remove once finished.
       }
@@ -26,7 +29,10 @@ var keyCountBottom = 0;
           console.log(keyCountBottom); //Logging in console for testing. Will remove once finished.
             /* Alert winner */
             if (keyCountBottom === 104 && keyCountTop < 104){
-              alert('Player Two Wins!')
+              showText('p2-win-dialog');
+              $( function() {
+                $( "#p1-win-dialog" ).dialog();
+              } );
             }
       }
     });
@@ -46,6 +52,13 @@ var keyCountBottom = 0;
     //     }
     //   });
     // } );
+
+    /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix */
+function showText(id){
+    var elem=document.getElementById(id);
+    setTimeout(function(){elem.style.visibility='visible';})
+    }
+
 });
 
 
