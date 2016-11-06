@@ -9,6 +9,9 @@
   <!-- Bootstrap CDN if i use it-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+
   <!-- custom styles (always require after Bootstrap) -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Don't forget to include a script tag with jQuery CDN -->
@@ -24,29 +27,55 @@
 </head>
 
 <body>
-    <!-- Place Holder template -->
-  <div class="game-board">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="race-track">
-              <div class="blockOne"><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-transport-travel/036423-3d-transparent-glass-icon-transport-travel-star-trek-sc43.png" height="90" width="90"/> </div>
-                  <!-- trouble with image size -->
-                <!-- <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-transport-travel/036423-3d-transparent-glass-icon-transport-travel-star-trek-sc43.png"/> -->
+  <header class="head-text">
+    <h1>The Kessel Run</h1>
+    <h4>Speed record held by the Millennium Falcon: "Less than 12 Parsecs"</h4>
+  </header>
+  <!-- - - Game Board - - -->
+    <div class="game-board">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="race-track">
+                <div class="blockOne"><img src="images/kspaceduel.png" height="90" width="90"/></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="row-two">
-            <div class="race-track">
-              <div class="blockTwo"></div>
-                <!-- <img href="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-transport-travel/036424-3d-transparent-glass-icon-transport-travel-star-trek1-sc43.png"/> -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row-two">
+              <div class="race-track">
+                <div class="blockTwo"><img src="images/alienblaster.png" height="100" width="100"/></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- - - HUD Footer - - -->
+  <footer>
+    <div class="ghud">
+      <div class="hud-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="left-hud">
+                <div class="blockOne"><img src="images/playerHUDLleft.jpeg" height="100" width="100"/></div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="center-hud">
+              <div class="blockTwo"><img src="images/HUDcenter.jpg" height="100" width="100"/></div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="right-hud">
+                <div class="blockOne"><img src="images/playerHUDRight.jpg" height="90" width="90"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
