@@ -11,6 +11,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
 
   <!-- custom styles (always require after Bootstrap) -->
   <link rel="stylesheet" href="css/style.css">
@@ -19,6 +20,9 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- load in app.js -->
   <script type="text/javascript" src="scripts/app.js"></script>
@@ -31,7 +35,11 @@
     <h1>The Kessel Run</h1>
     <h4>Speed record held by the Millennium Falcon: "Less than 12 Parsecs"</h4>
   </header>
-  <!-- - - Game Board - - -->
+
+  <!-- <div id="dialog">
+    <p>The Kessel Run was a hyperspace route used by smugglers and unscrupulous freighter captains to move spice from the spice mines of Kessel at the behest of the Pyke Syndicate. The route involves several extreme changes in velocity in order to jump to, and drop out of, light speed with the minimum time spent out of hyperspace while making drops, pick ups or tight turns.  The time to perform the run proved too difficult to arbitrate but a fierce competition developed nonetheless, for the pilot and ship able to make the run while covering the shortest overall distance demonstrating the most adept maneuverability and pilotage.</p>
+  </div> -->
+    <!-- - - Game Board - - -->
     <div class="game-board">
       <div class="container">
         <div class="row">
@@ -45,7 +53,7 @@
           <div class="col-sm-12">
             <div class="row-two">
               <div class="race-track">
-                <div class="blockTwo"><img src="images/alienblaster.png" height="100" width="100"/></div>
+                <div class="blockTwo"><img src="images/alienblaster.png" height="110" width="110"/></div>
               </div>
             </div>
           </div>
@@ -59,7 +67,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="hud-content">
-                <img class="hud-img" src="images/playerHUDLleft.jpeg" width="540"/>
+              <img class="hud-img" src="images/playerHUDLleft.jpeg" width="540"/>
             </div>
           </div>
           <div class="col-sm-4">
@@ -70,6 +78,30 @@
           <div class="col-sm-4">
             <div class="hud-content">
                 <img class="hud-img" src="images/playerHUDRight.jpg" width="540"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Playing around, tesing if i can put two colums on top of each other -->
+    <div class="hud-overlay">
+      <div class="hud-overlay-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="overlay-content-p1">
+                  <img  src="images/kspaceduel.png" height="70" width="70"/>
+                  <h3 class="player-one">Player 1</h3>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="overlay-content">
+
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="overlay-content-p2">
+              <img  src="images/alienblaster.png" height="90" width="90"/>
+              <h3 class="player-one">Player 2</h3>
             </div>
           </div>
         </div>

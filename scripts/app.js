@@ -14,12 +14,7 @@ var keyCountTop = 0;
               alert('Player One Wins!')
             }
           console.log(keyCountTop); //Logging in console for testing. Will remove once finished.
-
       }
-          /* ---- Negative penalty if player hits wrong key ---- */
-      // else if (e.which === 65 || e.which === 87 || e.which === 69 || e.which === 68 || e.which === 88 || e.which === 90) {
-      //   $( ".blockOne" ).animate({ "left": "-=30px" }, 80 );
-      // }
     });
 
     /* ---- Bottom Player animate code ----*/
@@ -34,18 +29,27 @@ var keyCountBottom = 0;
               alert('Player Two Wins!')
             }
       }
-      /* ---- Commenting out until i figure out bug. This is causing the game to break*/
-      // else if (e.which === 74 || e.which === 73 || e.which === 79 || e.which === 76 || e.which === 188 || e.which === 77); {
-      //   $( ".blockTwo" ).animate({ "left": "-=30px" }, 80 );
-      // }
     });
 
- // WINNER: 103 key presses
-
+    /* jQuery UI intro modal */
+    // $( function() {
+    //   $( "#dialog" ).dialog({
+    //     autoOpen: true,
+    //     minWidth: 800,
+    //     show: {
+    //       effect: "blind",
+    //       duration: 1200
+    //     },
+    //     hide: {
+    //       effect: "explode",
+    //       duration: 700
+    //     }
+    //   });
+    // } );
 });
 
 
-
+// minHeight: 300,minWidth:500})
 // sudo:
 
 // will want to set winning number of clicks based on browser window width
