@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: url(http://amxxcs.ru/wp/OH1Cf1c.jpg) center center no-repeat;
+  background: url(http://amxxcs.ru/wp/OH1Cf1c.jpg) no-repeat fixed 100% 100%;
   background-size: cover;
 }
  /* Welcome dialog that fires upon window load*/

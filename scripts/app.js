@@ -47,7 +47,7 @@ var keyCountBottom = 0;
           duration: 1200
         },
         hide: {
-          effect: "explode",
+          effect: "clip",
           duration: 700
         }
       });
