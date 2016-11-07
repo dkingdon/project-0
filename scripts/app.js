@@ -1,7 +1,5 @@
 console.log("Hey, I'm connected");
-
 $(document).ready(function() {
-
     /* ---- Top Player animate code ----*/
 var keyCountTop = 0;
     $( 'body' ).on('keydown', function(e) {
@@ -22,7 +20,6 @@ var keyCountTop = 0;
             }
       }
     });
-
     /* ---- Bottom Player animate code ----*/
 var keyCountBottom = 0;
     $( 'body' ).on('keydown', function(e) {
@@ -41,7 +38,6 @@ var keyCountBottom = 0;
             }
       }
     });
-
     /* ---- jQuery UI intro modal ---- */
     $( function() {
       $( "#dialog" ).dialog({
@@ -57,7 +53,6 @@ var keyCountBottom = 0;
         }
       });
     } );
-
     /* ---- Play button countdown initiation ---- */
     $('button').on('click', function(event){
       event.preventDefault();
@@ -66,11 +61,9 @@ var keyCountBottom = 0;
           $(function() { setInterval(function(){
             $('#countdown').text(countdown[index++]).css('font-size', '250px');}, 1000); });
     })
-
     /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix This is reused code that i have used before and got off of stack overflow*/
     function showText(id){
         var elem=document.getElementById(id);
         setTimeout(function(){elem.style.visibility='visible';})
         }
-
 });
