@@ -216,6 +216,22 @@ button {
   background: rgba(48,175,209,0.7);
 }
 
+/* Not working. Hmm. button defaulting back to original css upon activation. Need to fix.
+.btn:active {
+  color: white;
+  font-family: Allerta, sans-serif;
+  border: 2px solid #9139A4;
+  background: rgb(0,0,0,);
+  border-radius: 50%;
+}
+.btn:focus {
+  color: white;
+  font-family: Allerta, sans-serif;
+  border: 2px solid #9139A4;
+  background-color: black
+  border-radius: 50%;
+}*/
+
 #countdown {
   color: white;
   text-align: center;
@@ -224,7 +240,7 @@ button {
   margin-top: -600px;
 }
 
-#countdown h1 {
+#countdown p {
   font-size: 250px;
 }
 

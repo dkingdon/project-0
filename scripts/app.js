@@ -45,7 +45,7 @@ var keyCountBottom = 0;
       }
     });
 
-    /* jQuery UI intro modal */
+    /* ---- jQuery UI intro modal ---- */
     $( function() {
       $( "#dialog" ).dialog({
         autoOpen: true,
@@ -61,6 +61,15 @@ var keyCountBottom = 0;
       });
     } );
 
+    /* ---- Play button countdown initiation ---- */
+    $('button').on('click', function(event){
+      event.preventDefault();
+      var index = 0;
+      var countdown = [3, 2, 1, 'GO', ' '];
+          $(function() { setInterval(function() {$('#countdown').text(countdown[index++ % countdown.length]).css('font-size', '250px');}, 1000); });
+      return " ";
+    })
+
     /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix */
 function showText(id){
     var elem=document.getElementById(id);
@@ -69,6 +78,18 @@ function showText(id){
 
 });
 
+
+// for (var i = 3; i >+ 0; i--){
+//   if (i > 0) {
+//     $('#countdown').text('i').css('font-size', '250px');
+//     3000;
+//   }
+//   else {
+//     $('#countdown').text("GO");
+//     3000;
+//   }
+//   $('#countdown').text("");
+// }
 
 // minHeight: 300,minWidth:500})
 // sudo:
