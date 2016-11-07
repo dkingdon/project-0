@@ -11,36 +11,33 @@ var keyCountTop = 0;
           keyCountTop += 1;
           /* Calculates percentage complete and changes text on page to reflect */
           if (keyCountTop > 0){
-          $('#p1-progress').text(Math.round((keyCountTop / 104) * 100) + '%');
+          $('#p1-progress').text(Math.round((keyCountTop / 103) * 100) + '%');
           }
             /* Alert winner */
-            if (keyCountTop === 104 && keyCountBottom < 104){
-              showText('p1-win-dialog');
+            if (keyCountTop === 103 && keyCountBottom < 103){
+              showText('win-dialog');
               $( function() {
-                $( "#p1-win-dialog" ).dialog();
+                $( "#win-dialog" ).dialog();
               } );
             }
-          console.log(keyCountTop); //Logging in console for testing. Will remove once finished.
       }
     });
 
     /* ---- Bottom Player animate code ----*/
 var keyCountBottom = 0;
     $( 'body' ).on('keydown', function(e) {
-      if (e.which === 75 && keyCountBottom <= 104){
+      if (e.which === 75 && keyCountBottom <= 103){
         $( '.blockTwo' ).animate({ 'left': '+=15px' }, 80 );
           keyCountBottom += 1;
           /* Calculates percentage complete and changes text on page to reflect */
           if (keyCountBottom > 0){
-          $('#p2-progress').text(Math.round((keyCountBottom / 104) * 100) + '%');
-          }
-          console.log(keyCountBottom); //Logging in console for testing. Will remove once finished.
-            /* Alert winner */
-            if (keyCountBottom === 104 && keyCountTop < 104){
-              showText('p2-win-dialog');
-              $( function() {
-                $( "#p1-win-dialog" ).dialog();
-              } );
+            $('#p2-progress').text(Math.round((keyCountBottom / 103) * 100) + '%');
+            }
+              if (keyCountBottom === 103 && keyCountTop < 103){
+                showText('win-dialog');
+                $( function() {
+                  $( "#win-dialog" ).text('Player 2 Wins!').dialog();
+                } );
             }
       }
     });
@@ -70,17 +67,10 @@ var keyCountBottom = 0;
             $('#countdown').text(countdown[index++]).css('font-size', '250px');}, 1000); });
     })
 
-
-    /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix */
-function showText(id){
-    var elem=document.getElementById(id);
-    setTimeout(function(){elem.style.visibility='visible';})
-    }
+    /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix This is reused code that i have used before and got off of stack overflow*/
+    function showText(id){
+        var elem=document.getElementById(id);
+        setTimeout(function(){elem.style.visibility='visible';})
+        }
 
 });
-
-
-
-// sudo:
-
-// getting var data to persist after page load. For win counter: http://stackoverflow.com/questions/16206322/how-to-get-js-variable-to-retain-value-after-page-refresh

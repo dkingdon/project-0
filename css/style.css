@@ -4,12 +4,9 @@ html, body {
   background: url(http://amxxcs.ru/wp/OH1Cf1c.jpg) no-repeat fixed 100% 100%;
   background-size: cover;
 }
- /* Welcome dialog that fires upon window load*/
+ /* --- Welcome dialog that fires upon window load --- */
 #dialog {
   color: white;
-  /* this is fixing the background resizing bug, but eliminates the animation. Not sure which is worse.
-  position: absolute;
-  top: -215px;*/
   border: 3px solid #9139A4;
   background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
   font-family: Allerta, sans-serif;
@@ -17,30 +14,21 @@ html, body {
   font-size: 18px;
   font-stretch: expanded;
 }
-#p1-win-dialog {
+
+#win-dialog {
   color: white;
   border: 3px solid #9139A4;
-  background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
+  background: rgba(0,0,0,0.7);
   font-family: Allerta, sans-serif;
   font-weight: bold;
   font-size: 40px;
   font-stretch: expanded;
   text-align: center;
-  /*padding-top: 20px;*/
+  padding-bottom: -10px;
+  padding-top: 20px;
 }
 
-#p2-win-dialog {
-  color: white;
-  border: 3px solid #9139A4;
-  background: rgba(0,0,0,0.7); /* using rgba to dim background without affecting the text */
-  font-family: Allerta, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  font-stretch: expanded;
-  text-align: center;
-  /*padding-top: 20px;*/
-}
-
+  /* --- Header Styling --- */
 .head-text {
   margin-top: 0;
   color: white;
@@ -63,6 +51,7 @@ html, body {
   padding-top: 0;
 }
 
+  /* --- Gameboard Styling --- */
 .container {
   display: block;
   top: 20px;
@@ -102,7 +91,7 @@ html, body {
   transform: rotate(270deg);
 }
 
-  /* HUD image placement and style*/
+  /* --- HUD image placement and style --- */
 
 .hud-container {
   background-color: black;
@@ -116,7 +105,7 @@ html, body {
   margin-left: 0px;
   margin-right: 10px;
 }
-  /* HUD Overlay: Player info and stats*/
+  /* --- HUD Overlay: Player info and stats --- */
 .player {
   color: white;
   margin-top: 0;
@@ -166,7 +155,7 @@ html, body {
   margin-left: -5px;
 }
 
-    /* Progress counter overlays */
+    /* --- Progress counter overlays --- */
 .p1-progress-overlay {
   text-align: center;
   color: white;
@@ -190,7 +179,7 @@ html, body {
 .p2-progress-overlay h2 {
   font-size: 55px;
 }
- /*Play button*/
+ /* --- Play button --- */
 button {
   margin-left: 205px;
   margin-top: -38px;
