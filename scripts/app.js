@@ -66,9 +66,10 @@ var keyCountBottom = 0;
       event.preventDefault();
       var index = 0;
       var countdown = [3, 2, 1, 'GO', ' '];
-          $(function() { setInterval(function() {$('#countdown').text(countdown[index++ % countdown.length]).css('font-size', '250px');}, 1000); });
-      return " ";
+          $(function() { setInterval(function(){
+            $('#countdown').text(countdown[index++]).css('font-size', '250px');}, 1000); });
     })
+
 
     /* ---- Hides the win dialog text until needed. Encountered a bug that showed the text on screen at all times. This is the fix */
 function showText(id){
@@ -79,28 +80,7 @@ function showText(id){
 });
 
 
-// for (var i = 3; i >+ 0; i--){
-//   if (i > 0) {
-//     $('#countdown').text('i').css('font-size', '250px');
-//     3000;
-//   }
-//   else {
-//     $('#countdown').text("GO");
-//     3000;
-//   }
-//   $('#countdown').text("");
-// }
 
-// minHeight: 300,minWidth:500})
 // sudo:
 
-// will want to set winning number of clicks based on browser window width
-//       http://stackoverflow.com/questions/1038727/how-to-get-browser-width-using-javascript-code
-//
 // getting var data to persist after page load. For win counter: http://stackoverflow.com/questions/16206322/how-to-get-js-variable-to-retain-value-after-page-refresh
-
-// need a listener to identify when a button is pressed. Maybe add to a counter, ever 10 presses can be one button push? will need function for that as well. every 10, counter starts over?
-
-// IMPORTANT: still need to identify how to deturmin winner
-//
-// future: for more complex idea of player turn by typing and using math https://github.com/tzuryby/jquery.hotkeys
