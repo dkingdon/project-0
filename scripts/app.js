@@ -15,7 +15,7 @@ var keyCountTop = 0;
             if (keyCountTop === 103 && keyCountBottom < 103){
               showText('win-dialog');
               $( function() {
-                $( "#win-dialog" )text('Player 1 Wins!').dialog();
+                $( "#win-dialog" ).text('Player 1 Wins!').dialog();
               } );
             }
       }
